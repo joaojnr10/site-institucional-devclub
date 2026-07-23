@@ -85,7 +85,7 @@ const chatMessages = document.querySelector(".mensagens-assistente");
 const sendButton = document.querySelector(".enviar-assistente");
 
 const webhookUrl =
-  "https://treinamento-n8n-n8n-editor.5t0uy4.easypanel.host/webhook/assistente-devclub";
+  "https://treinamento-n8n-n8n-webhook.5t0uy4.easypanel.host/webhook/assistente-devclub";
 
 
 chatButton.addEventListener("click", () => {//Abre e fecha o chat
