@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DevClub — Tech Dimensional</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- INÍCIO DA PÁGINA -->
+  <!-- CÉU ESPACIAL FIXO: fica fora do main para não ser cortado pelo conteúdo -->
+  <div class="ceu-animado" aria-hidden="true"></div>
+  <!-- CONTEÚDO PRINCIPAL E FUNDO DECORATIVO -->
+  <main class="pagina">
+    <div class="grade-fundo"></div>
+    <div class="orbe-decorativo orbe-superior"></div>
+    <div class="orbe-decorativo orbe-inferior"></div>
+    <!-- MENU SUPERIOR: logo, links e botões -->
+    <nav>
+      <div class="marca-devclub">
+        <img src="./img/logo-devclub.png" alt="Logo DevClub" class="logo-devclub">DEV<em>CLUB</em>
+      </div>
+      <div class="links-navegacao">
+        <a href="#sobre">Sobre</a>
+        <a href="#formacoes">Formações e Faculdade</a>
+        <a href="#bonus">Bônus</a>
+        <a href="#depoimentos">Avaliação</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="acoes-navegacao">
+        <button class="botao-area-aluno">Área do aluno ↗</button>
+        <button class="botao-quero-ser-aluno">Quero ser aluno</button>
+      </div>
+    </nav>
+    <!-- HERO: apresentação principal -->
+    <section class="apresentacao-principal">
+      <div>
+        <div class="selo-apresentacao">
+          <span class="ponto-online"></span>Seu futuro começa no código
+        </div>
+        <h1>De zero a dev.<br><span>Sem atalhos.</span><br>Sem limites.</h1>
+        <p class="texto-apresentacao">Domine as tecnologias mais desejadas do mercado com projetos reais, mentoria de
+          quem vive tecnologia e uma
+          comunidade que evolui junto.</p>
+
+        <div class="botoes-apresentacao">
+          <button class="botao-principal">Quero fazer parte →</button>
+          <button class="botao-secundario">Ver formações</button>
+        </div>
+      </div>
+      <!-- PAINEL DE CÓDIGO E JANELAS FLUTUANTES -->
+      <div class="painel-codigo" aria-label="Prévia visual da plataforma DevClub">
+        <div class="brilho-painel"></div>
+        <div class="janela-codigo">
+          <div class="barra-janela-codigo">
+            <i class="controle-janela"></i>
+            <i class="controle-janela"></i>
+            <i class="controle-janela"></i>
+            <span class="nome-arquivo">career.tsx</span>
+          </div>
+          <!-- Area dos codigos que serao exibidos na tela -->
+          <pre><span class="codigo-numero-linha">01</span><span class="roxo">const</span> <span class="off-white">future</span> = <span class="roxo">await</span> <span class="verde">devClub</span>({
+                    <span class="codigo-numero-linha">02</span>  level: <span class="orbe-inferior">'do-zero'</span>,
+                    <span class="codigo-numero-linha">03</span>  focus: [<span class="orbe-inferior">'prática'</span>, <span class="orbe-inferior">'carreira'</span>],
+                    <span class="codigo-numero-linha">04</span>  support: <span class="roxo">true</span>
+                    <span class="codigo-numero-linha">05</span>});
+                    <span class="codigo-numero-linha">06</span>
+                    <span class="codigo-numero-linha">07</span><span class="roxo">if</span> (<span class="off-white">future</span>.<span class="verde">isReady</span>) {
+                    <span class="codigo-numero-linha">08</span>  <span class="verde">market</span>.<span class="off-white">enter</span>(<span class="off-white">future</span>);
+                    <span class="codigo-numero-linha">09</span>  <span class="verde">career</span>.<span class="off-white">levelUp</span>();
+                    <span class="codigo-numero-linha">10</span>}</pre>
+        </div>
+        <!--Janela flutuante de cima-->
+        <div class="cartao-flutuante cartao-projetos">
+          <div class="etiqueta-secao">
+            Progresso na trilha
+          </div>
+          <div class="valor-cartao">
+            Front-end
+            <span class="indicador-crescimento">
+              82%
+            </span>
+          </div>
+          <div class="icone-cartao"><!-- barra de crescimento -->
+            <i style="height:11px"></i>
+            <i style="height:17px"></i>
+            <i style="height:14px"></i>
+            <i style="height:25px"></i>
+            <i style="height:31px"></i>
+            <i style="height:34px"></i>
+          </div>
+        </div>
+        <!--Janela flutuante de baixo-->
+        <div class="cartao-flutuante cartao-suporte">
+          <div class="etiqueta-secao">
+            Status da carreira
+          </div>
+          <div class="valor-cartao">
+            <span class="ponto-online" style="display:inline-block;margin-right:7px">
+            </span>
+            Pronto pro mercado
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Empresas e marcas em movimento lateral -->
+    <section class="secao-empresas empresas-animadas" aria-label="Empresas que contrataram alunos">
+      <p class="empresas-frase">Alguns dos nossos alunos foram contratados por essas grandes empresas do mercado.</p>
+      <div class="empresas-faixa">
+        <div class="empresas-trilho"><!--faixa das empresas deslizantes-->
+          <div class="empresas-grupo"><!--primeiro grupo: conteúdo lido normalmente-->
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/google/63F58A"
+                alt="Google"><span>Google</span></div>
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/meta/63F58A" alt="Meta"><span>Meta</span>
+            </div>
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/nubank/63F58A"
+                alt="Nubank"><span>Nubank</span></div>
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/ifood/63F58A" alt="iFood"><span>iFood</span>
+            </div>
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/spotify/63F58A"
+                alt="Spotify"><span>Spotify</span></div>
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/netflix/63F58A"
+                alt="Netflix"><span>Netflix</span></div>
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/airbnb/63F58A"
+                alt="Airbnb"><span>Airbnb</span></div>
+          </div>
+          <!--Segundo Grupo das mesmas empresas, para o movimento infinito-->
+          <div class="empresas-grupo" aria-hidden="true">
+            <!--aria-hidden="true" -> para o navegador não ler o conteúdo desse grupo, apenas o primeiro-->
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/google/63F58A" alt=""><span>Google</span>
+            </div>
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/meta/63F58A" alt=""><span>Meta</span></div>
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/nubank/63F58A" alt=""><span>Nubank</span>
+            </div>
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/ifood/63F58A" alt=""><span>iFood</span>
+            </div>
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/spotify/63F58A" alt=""><span>Spotify</span>
+            </div>
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/netflix/63F58A" alt=""><span>Netflix</span>
+            </div>
+            <div class="empresa-logo"><img src="https://cdn.simpleicons.org/airbnb/63F58A" alt=""><span>Airbnb</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================================================
+           SOBRE NÓS: propósito, história e números do DevClub
+           ================================================== -->
+    <section class="sobre" id="sobre">
+      <div class="sobre-container">
+
+        <!-- LADO ESQUERDO: apresentação do DevClub -->
+        <div class="sobre-conteudo animar-entrada">
+          <span class="sobre-etiqueta">// SOBRE O DEVCLUB</span>
+
+          <h2>Não somos apenas uma escola.<span>Somos o ponto de partida.</span></h2>
+          <p class="sobre-destaque">O DevClub nasceu para mostrar que qualquer pessoa pode construir
+            uma carreira em tecnologia quando encontra direção, prática e
+            uma comunidade que acredita no seu potencial.</p>
+
+          <p class="sobre-texto">Aqui, você não precisa chegar sabendo. Nossas formações conduzem
+            o aluno desde os primeiros passos até a criação de projetos completos,
+            utilizando tecnologias presentes no dia a dia das empresas.</p>
+
+          <p class="sobre-texto">Mais do que ensinar código, ajudamos pessoas a desenvolver confiança, disciplina e
+            habilidades para conquistar novas oportunidades.</p>
+
+          <a href="#formacoes" class="sobre-botao">Conhecer nossas formações<span aria-hidden="true">→</span></a>
+        </div>
+
+        <!-- LADO DIREITO: painel visual e estatísticas -->
+        <div class="sobre-painel animar-entrada">
+          <div class="sobre-brilho"></div>
+          <div class="sobre-grade"></div>
+
+          <div class="sobre-painel-topo">
+            <span>SISTEMA_DEVCLUB</span>
+            <span class="sobre-status"><i></i> ONLINE</span>
+          </div>
+
+          <div class="sobre-numero-principal">
+            <strong>+25K</strong>
+            <span>alunos impactados</span>
+          </div>
+
+          <div class="sobre-estatisticas">
+            <article class="sobre-estatistica">
+              <strong>Do zero</strong>
+              <span>Formações para quem está começando.</span>
+            </article>
+
+            <article class="sobre-estatistica">
+              <strong>Na prática</strong>
+              <span>Projetos que desenvolvem habilidades reais.</span>
+            </article>
+
+            <article class="sobre-estatistica">
+              <strong>Em comunidade</strong>
+              <span>Pessoas evoluindo na mesma direção.</span>
+            </article>
+
+            <article class="sobre-estatistica">
+              <strong>Para o futuro</strong>
+              <span>Tecnologia, carreira e inteligência artificial.</span>
+            </article>
+          </div>
+
+          <div class="sobre-terminal">
+            <span>&gt;</span> transformando_pessoas_em_profissionais()
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+                      ÁREA DE FORMAÇÕES 
+    =================================================== -->
+    <section class="secao-conteudo" id="formacoes">
+      <div class="cabecalho-secao animar-entrada">
+        <div>
+          <div class="etiqueta-secao">
+            FORMAÇÕES
+          </div>
+          <h2>Do zero ao avançado.<br><span>Sem pular etapas.</span></h2>
+          <p>Nossas formações completas e atualizadas para transformar conhecimento em portfólio.</p>
+        </div>
+      </div>
+      <div class="grade-cartoes formacao-cards">
+        <article class="cartao-formacao cartao-destaque">
+          <img class="formacao-imagem"
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+            alt="Notebook exibindo códigos de programação">
+          <div class="formacao-corpo">
+            <h3>Programação Full Stack</h3>
+            <p>Aprenda front-end, back-end, bancos de dados, APIs e publicação para construir aplicações completas.</p>
+          </div>
+        </article>
+
+        <article class="cartao-formacao">
+          <img class="formacao-imagem"
+            src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+            alt="Código JavaScript em um computador">
+          <div class="formacao-corpo">
+            <h3>JavaScript Completo</h3>
+            <p>Domine lógica, funções, objetos, consumo de APIs e os fundamentos das aplicações modernas.</p>
+          </div>
+        </article>
+
+        <article class="cartao-formacao">
+          <img class="formacao-imagem"
+            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+            alt="Representação visual de inteligência artificial">
+          <div class="formacao-corpo">
+            <h3>IA &amp; Automações</h3>
+            <p>Crie agentes inteligentes, prompts eficientes e automações com n8n para resolver tarefas reais.</p>
+          </div>
+        </article>
+
+        <article class="cartao-formacao">
+          <img class="formacao-imagem"
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+            alt="Painel com gráficos e dados">
+          <div class="formacao-corpo">
+            <h3>Dados &amp; Power BI</h3>
+            <p>Organize informações, construa dashboards e transforme dados em decisões claras para empresas.</p>
+          </div>
+        </article>
+
+      </div>
+      <!--===============================================
+              Tecnologias ensinadas em movimento lateral 
+       ================================================-->
+      <div class="tecnologias-bloco" aria-label="Tecnologias ensinadas nas formações">
+        <p>Aprenda as tecnologias que estão construindo o presente e decidindo o futuro.</p>
+        <div class="tecnologias-faixa">
+          <div class="tecnologias-trilho">
+            <!-- Primeiro grupo: conteúdo lido normalmente -->
+            <div class="tecnologias-grupo">
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/html5/63F58A"
+                  alt="HTML5"><span>HTML5</span></div>
+              <div class="tecnologia-logo"><img src="https://api.iconify.design/logos/css-3.svg"
+                  alt="CSS3"><span>CSS3</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/javascript/63F58A"
+                  alt="JavaScript"><span>JavaScript</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/typescript/63F58A"
+                  alt="TypeScript"><span>TypeScript</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/react/63F58A"
+                  alt="React"><span>React</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/nodedotjs/63F58A"
+                  alt="Node.js"><span>Node.js</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/git/63F58A" alt="Git"><span>Git</span>
+              </div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/github/63F58A"
+                  alt="GitHub"><span>GitHub</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/python/63F58A"
+                  alt="Python"><span>Python</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/postgresql/63F58A"
+                  alt="PostgreSQL"><span>PostgreSQL</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/mongodb/63F58A"
+                  alt="MongoDB"><span>MongoDB</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/docker/63F58A"
+                  alt="Docker"><span>Docker</span></div>
+              <div class="tecnologia-logo"><img src="https://api.iconify.design/simple-icons/openai.svg?color=%2363F58A"
+                  alt="OpenAI"><span>OpenAI</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/anthropic/63F58A"
+                  alt="Claude"><span>Claude</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/n8n/63F58A" alt="n8n"><span>n8n</span>
+              </div>
+              <div class="tecnologia-logo"><img src="https://api.iconify.design/logos/microsoft-power-bi.svg"
+                  alt="Power BI"><span>Power BI</span></div>
+            </div>
+
+            <!-- Segundo grupo: cópia para o movimento infinito -->
+            <div class="tecnologias-grupo" aria-hidden="true">
+              <!--aria-hidden="true" -> para o navegador não ler o conteúdo desse grupo, apenas o primeiro-->
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/html5/63F58A" alt=""><span>HTML5</span>
+              </div>
+              <div class="tecnologia-logo"><img src="https://api.iconify.design/logos/css-3.svg"
+                  alt=""><span>CSS3</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/javascript/63F58A"
+                  alt=""><span>JavaScript</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/typescript/63F58A"
+                  alt=""><span>TypeScript</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/react/63F58A" alt=""><span>React</span>
+              </div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/nodedotjs/63F58A"
+                  alt=""><span>Node.js</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/git/63F58A" alt=""><span>Git</span>
+              </div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/github/63F58A"
+                  alt=""><span>GitHub</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/python/63F58A"
+                  alt=""><span>Python</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/postgresql/63F58A"
+                  alt=""><span>PostgreSQL</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/mongodb/63F58A"
+                  alt=""><span>MongoDB</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/docker/63F58A"
+                  alt=""><span>Docker</span></div>
+              <div class="tecnologia-logo"><img src="https://api.iconify.design/simple-icons/openai.svg?color=%2363F58A"
+                  alt=""><span>OpenAI</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/anthropic/63F58A"
+                  alt=""><span>Claude</span></div>
+              <div class="tecnologia-logo"><img src="https://cdn.simpleicons.org/n8n/63F58A" alt=""><span>n8n</span>
+              </div>
+              <div class="tecnologia-logo"><img src="https://api.iconify.design/logos/microsoft-power-bi.svg"
+                  alt=""><span>Power BI</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==============================
+     Área de Bonus e conteúdos extras
+     ==================================-->
+    <section class="secao-duas-colunas secao-conteudos-extras" id="bonus">
+      <div>
+        <div class="etiqueta-secao">ALÉM DO CÓDIGO</div>
+        <h2>Tudo para acelerar<br><span>a sua evolução.</span></h2>
+        <p>Carreira, produtividade, suporte e conteúdos complementares no mesmo lugar.</p>
+      </div>
+      <div class="lista-conteudos-extras extras-lista">
+        <article><b>01</b><span><small>CARREIRA</small>Recrutadora toda semana</span><i>CURRÍCULO E ENTREVISTAS ↗</i>
+        </article>
+        <article><b>02</b><span><small>PERFORMANCE</small>Acompanhamento de alta performance</span><i>ROTINA E CONFIANÇA
+            ↗</i></article>
+        <article><b>03</b><span><small>TECNOLOGIA</small>Mentorias técnicas semanais</span><i>ENCONTROS AO VIVO ↗</i>
+        </article>
+        <article><b>04</b><span><small>INTELIGÊNCIA ARTIFICIAL</small>Agentes de IA disponíveis 24h</span><i>APOIO NOS
+            ESTUDOS ↗</i></article>
+        <article><b>05</b><span><small>CARREIRA GLOBAL</small>Inglês para desenvolvedores</span><i>CONTEÚDO BÔNUS ↗</i>
+        </article>
+        <article><b>06</b><span><small>NEGÓCIOS</small>Freelancer do zero</span><i>CONTEÚDO BÔNUS ↗</i></article>
+        <article><b>07</b><span><small>PRODUTIVIDADE</small>Git, GitHub e Open Source</span><i>CONTEÚDO BÔNUS ↗</i>
+        </article>
+        <article><b>08</b><span><small>SOFT SKILLS</small>Comunicação que contrata</span><i>CONTEÚDO BÔNUS ↗</i>
+        </article>
+      </div>
+    </section>
+    <!--=================================================
+          PORTFÓLIO: projetos construídos pelos alunos
+    ===================================================-->
+    <section class="secao-conteudo">
+      <div class="cabecalho-secao animar-entrada">
+        <div>
+          <div class="etiqueta-secao">PORTFÓLIOS</div>
+          <h2>Projetos práticos.<br><span>Resultados reais.</span></h2>
+          <p>Saia de cada módulo com algo novo para mostrar na entrevista.</p>
+        </div>
+      </div>
+
+      <div class="grade-projetos">
+        <article class="projeto-aluno">
+          <div class="demonstracao-projeto tema-verde">
+            <div class="projeto-imagem">
+              <img
+                src="https://play-lh.googleusercontent.com/zor2nP-bY6Cs7IXd9BKMlushbDJs6IWzEBt4Zse1M15Ic6CJljC8UveJ4hDGGSHmo0GA4UfJw5dcKDIEQvE6Zg=w526-h296-rw"
+                alt="logo do projeto pulse">
+            </div>
+
+          </div>
+          <h3>Pulse Finance</h3>
+          <p>Dashboard financeiro com Power BI</p>
+        </article>
+
+        <article class="projeto-aluno">
+          <div class="demonstracao-projeto tema-coral">
+            <div class="projeto-imagem">
+              <img
+                src="https://recursos.deli.com.br/hs-fs/hubfs/Screen%20Template%20Changelog%20-%20Abril%202027%20Deli.png?width=650&height=390&name=Screen%20Template%20Changelog%20-%20Abril%202027%20Deli.png"
+                alt="logo do projeto pulse">
+            </div>
+          </div>
+          <h3>Food App</h3>
+          <p>Dashboard de restaurantes</p>
+        </article>
+
+        <article class="projeto-aluno">
+          <div class="demonstracao-projeto tema-escuro">
+            <div class="projeto-imagem">
+              <img src="https://storage.googleapis.com/star-lab/blog/OGs/o-que-e-n8n-automacao.webp"
+                alt="logo do projeto pulse">
+            </div>
+          </div>
+          <h3>Code Mentor AI</h3>
+          <p>Assistente inteligente integrado com n8n.</p>
+        </article>
+      </div>
+    </section>
+    <!-- ===============================================
+                        DEPOIMENTOS
+      ==================================================-->
+    <section class="secao-conteudo secao-depoimentos" id="depoimentos">
+      <div class="cabecalho-secao animar-entrada">
+        <div>
+          <div class="etiqueta-secao">DEPOIMENTOS</div>
+          <h2>O código mudou a carreira.<br><span>As histórias provam o impacto.</span></h2>
+          <p>Pessoas que decidiram começar, enfrentaram os desafios e transformaram conhecimento em novas oportunidades.
+          </p>
+        </div>
+      </div>
+
+      <div class="grade-depoimentos-comentarios">
+        <article class="cartao-depoimento animar-entrada">
+          <div class="avaliacao-depoimento" aria-label="Avaliação de cinco estrelas">★★★★★</div>
+          <blockquote>“Eu comecei sem entender lógica de programação. A organização das trilhas me ajudou a parar de
+            pular conteúdo e finalmente construir projetos completos.”</blockquote>
+          <div class="pessoa-depoimento"><img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=240&amp;q=85"
+              alt="Foto demonstrativa de Mariana Alves">
+            <div><strong>Mariana Alves</strong><span>Desenvolvedora Front-end</span></div>
+          </div>
+        </article>
+
+        <article class="cartao-depoimento animar-entrada">
+          <div class="avaliacao-depoimento" aria-label="Avaliação de cinco estrelas">★★★★★</div>
+          <blockquote>“Os projetos me deram confiança para apresentar meu trabalho em entrevistas. Deixei de apenas
+            assistir aulas e comecei a entender como uma aplicação funciona de verdade.”</blockquote>
+          <div class="pessoa-depoimento"><img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;w=240&amp;q=85"
+              alt="Foto demonstrativa de Lucas Ferreira">
+            <div><strong>Lucas Ferreira</strong><span>Desenvolvedor Full Stack</span></div>
+          </div>
+        </article>
+
+        <article class="cartao-depoimento animar-entrada">
+          <div class="avaliacao-depoimento" aria-label="Avaliação de cinco estrelas">★★★★★</div>
+          <blockquote>“A parte de inteligência artificial e automações mudou minha forma de trabalhar. Hoje consigo
+            criar fluxos que economizam horas de tarefas repetitivas.”</blockquote>
+          <div class="pessoa-depoimento"><img
+              src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&amp;fit=crop&amp;w=240&amp;q=85"
+              alt="Foto demonstrativa de Camila Santos">
+            <div><strong>Camila Santos</strong><span>Especialista em Automações</span></div>
+          </div>
+        </article>
+
+        <article class="cartao-depoimento animar-entrada">
+          <div class="avaliacao-depoimento" aria-label="Avaliação de cinco estrelas">★★★★★</div>
+          <blockquote>“Eu já trabalhava com tecnologia, mas sentia que estava parado. As mentorias e os desafios
+            práticos me fizeram evoluir tecnicamente e buscar oportunidades maiores.”</blockquote>
+          <div class="pessoa-depoimento"><img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=240&amp;q=85"
+              alt="Foto demonstrativa de Rafael Oliveira">
+            <div><strong>Rafael Oliveira</strong><span>Desenvolvedor Back-end</span></div>
+          </div>
+        </article>
+
+        <article class="cartao-depoimento animar-entrada">
+          <div class="avaliacao-depoimento" aria-label="Avaliação de cinco estrelas">★★★★★</div>
+          <blockquote>“Aprendi a transformar dados confusos em dashboards claros. Os projetos se tornaram a parte mais
+            importante do meu portfólio profissional.”</blockquote>
+          <div class="pessoa-depoimento"><img
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&amp;fit=crop&amp;w=240&amp;q=85"
+              alt="Foto demonstrativa de Juliana Costa">
+            <div><strong>Juliana Costa</strong><span>Analista de Dados</span></div>
+          </div>
+        </article>
+
+        <article class="cartao-depoimento animar-entrada">
+          <div class="avaliacao-depoimento" aria-label="Avaliação de cinco estrelas">★★★★★</div>
+          <blockquote>“O conteúdo direto e a prática constante fizeram toda a diferença. Hoje consigo desenvolver
+            interfaces responsivas e explicar cada decisão do meu código.”</blockquote>
+          <div class="pessoa-depoimento"><img
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&amp;fit=crop&amp;w=240&amp;q=85"
+              alt="Foto demonstrativa de Gabriel Lima">
+            <div><strong>Gabriel Lima</strong><span>Desenvolvedor de Interfaces</span></div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+    <!-- =============================================
+            PROFESSORES: equipe das formações 
+    ===============================================-->
+    <section class="secao-conteudo" id="professores">
+      <div class="cabecalho-secao animar-entrada">
+        <div>
+          <div class="etiqueta-secao">
+            PROFESSORES
+          </div>
+          <h2>Aprenda com<br><span>quem faz.</span></h2>
+        </div>
+      </div>
+      <!-- Trilho horizontal: a roda do mouse avança os professores; nas pontas, a página volta a descer. -->
+      <div class="lista-professores lista-professores-horizontal" aria-label="Professores do DevClub">
+        <article class="professor">
+          <div class="foto-professor"><img
+              src="https://tnpetroleo.com.br/media/cache/b8/4c/b84c105dd38e27ab58e003f24d2d585d.png"
+              alt="Retrato Rodolfo Mori"></div>
+          <h3>Rodolfo Mori</h3>
+          <p>FULL STACK</p>
+        </article>
+
+        <article class="professor">
+          <div class="foto-professor"><img
+              src="https://media.licdn.com/dms/image/v2/D4D03AQELxRQOfYUDfQ/profile-displayphoto-shrink_200_200/B4DZSlMkP4H0AY-/0/1737938323101?e=2147483647&v=beta&t=db-t3r3AMmaI1dwTFwa7Uzalvuk4nvQtpMbjDJtnpwQ"
+              alt="Retrato Fernanda"></div>
+          <h3>Fernanda</h3>
+          <p>CARREIRA</p>
+        </article>
+
+        <article class="professor">
+          <div class="foto-professor"><img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+              alt="Retrato Agustinho"></div>
+          <h3>Agustinho</h3>
+          <p>BACK END</p>
+        </article>
+
+        <article class="professor">
+          <div class="foto-professor"><img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+              alt="Retrato Henrique"></div>
+          <h3>Henrique</h3>
+          <p>REACT</p>
+        </article>
+
+        <article class="professor">
+          <div class="foto-professor"><img
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+              alt="Retrato Márcio"></div>
+          <h3>Márcio</h3>
+          <p>IA &amp; N8N</p>
+        </article>
+
+        <article class="professor">
+          <div class="foto-professor"><img
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+              alt="Retrato Juliana"></div>
+          <h3>Juliana</h3>
+          <p>DADOS</p>
+        </article>
+
+        <article class="professor">
+          <div class="foto-professor"><img
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+              alt="Retrato Mateus"></div>
+          <h3>Mateus</h3>
+          <p>MOBILE</p>
+        </article>
+
+      </div>
+    </section>
+    <!--=======================================
+              MEC E CERTIFICADO OFICIAL 
+     =========================================-->
+    <section class="secao-duas-colunas">
+      <div class="selo-mec">
+        <b>MEC</b>
+        <span>ESCOLA RECONHECIDA</span>
+      </div>
+      <div>
+        <div class="etiqueta-secao">
+          FORMAÇÃO RECONHECIDA
+        </div>
+        <h2>Conhecimento.<br><span>Oficialmente comprovado.</span></h2>
+        <p>Certificados e diplomas oficiais para valorizar seu currículo.</p>
+
+        <div class="certificado-exemplo">
+          <small>
+            CERTIFICADO DE CONCLUSÃO
+          </small>
+          <strong>
+            Formação Programação Full Stack
+          </strong>
+          <small>
+            RODOLFO MORI · DIRETOR ACADÊMICO
+          </small>
+        </div>
+      </div>
+    </section>
+    <!-- MERCADO: salários ilustrativos -->
+    <section class="secao-duas-colunas">
+      <div>
+        <div class="etiqueta-secao">
+          MERCADO NACIONAL E INTERNACIONAL
+        </div>
+        <h2>Uma carreira.<br><span>Possibilidades globais.</span></h2>
+        <p>Estimativas ilustrativas de remuneração.</p>
+      </div>
+
+      <div class="mercado-comparacao">
+        <div class="mercado-cabecalho"><span>NÍVEL</span><span>BRASIL / MÊS</span><span>INTERNACIONAL / MÊS</span></div>
+        <article><strong>Júnior</strong><b>R$ 4 mil</b><em>US$ 5 mil</em></article>
+        <article><strong>Pleno</strong><b>R$ 6,5 mil</b><em>US$ 7,5 mil</em></article>
+        <article><strong>Sênior</strong><b>R$ 10 mil+</b><em>US$ 12 mil+</em></article>
+      </div>
+    </section>
+    <!-- GARANTIA DE SETE DIAS -->
+    <section class="secao-garantia">
+      <div class="secao-duas-colunas">
+        <div class="numero-garantia">
+          07
+        </div>
+        <div>
+          <div class="etiqueta-secao">
+            RISCO ZERO
+          </div>
+          <h2>
+            7 dias para viver a experiência completa.
+          </h2>
+          <p>Entre, conheça a plataforma, assista às primeiras aulas e avalie a metodologia com tranquilidade. Você terá
+            sete dias corridos após a compra para decidir se o treinamento combina com os seus objetivos.</p>
+          <p>Se não fizer sentido para você dentro desse período, solicite o cancelamento pelos canais oficiais
+            indicados na compra. Após a confirmação, o acesso será encerrado e o reembolso será processado de acordo com
+            o meio de pagamento.</p>
+          <small class="garantia-nota">Consulte os termos oficiais da oferta antes de publicar esta informação.</small>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ: perguntas frequentes -->
+    <section class="secao-duas-colunas" id="faq">
+      <div>
+        <div class="etiqueta-secao">
+          FAQ
+        </div>
+        <h2>Ainda ficou<br><span>alguma dúvida?</span></h2>
+        <p>Fale com o assistente no canto da tela.</p>
+      </div>
+
+      <div class="lista-perguntas">
+        <details>
+          <summary>Preciso saber programar?<b>+</b></summary>
+          <p>Não. As formações começam do absoluto zero.</p>
+        </details>
+
+        <details>
+          <summary>Os cursos têm certificado?<b>+</b></summary>
+          <p>Sim, ao concluir cada formação.</p>
+        </details>
+
+        <details>
+          <summary>Como funciona o suporte?<b>+</b></summary>
+          <p>Professores, equipe humana, mentorias e agentes de IA.</p>
+        </details>
+
+        <details>
+          <summary>O DevClub ajuda no emprego?<b>+</b></summary>
+          <p>Há preparação de carreira, entrevistas e vagas exclusivas.</p>
+        </details>
+      </div>
+    </section>
+    <!-- SKILLS: tecnologias ensinadas exibidas em scroll lateral infinito -->
+    <section class="faixa-habilidades">
+      <div class="habilidades-trilho">
+        <div class="habilidades-grupo">
+          HTML · CSS · JAVASCRIPT · REACT · NODE · GIT · N8N · IA · DADOS · MOBILE ·
+        </div>
+
+        <div class="habilidades-grupo" aria-hidden="true">
+          HTML · CSS · JAVASCRIPT · REACT · NODE · GIT · N8N · IA · DADOS · MOBILE ·
+        </div>
+      </div>
+    </section>
+    <!-- CONCLUSÃO: chamada final -->
+    <section class="chamada-final" id="matricula">
+      <div class="etiqueta-secao">
+        SEU PRÓXIMO CAPÍTULO COMEÇA AGORA
+      </div>
+      <h2>O mercado não espera.<br><span>Você também não precisa.</span></h2>
+      <p>Transforme curiosidade em carreira.</p>
+
+      <button class="botao-principal">Quero ser aluno →</button>
+
+      <small>7 DIAS DE GARANTIA · ACESSO IMEDIATO · SUPORTE TODOS OS DIAS</small>
+    </section>
+    <!-- RODAPÉ: navegação final, contato e direitos -->
+    <footer class="rodape" id="contato">
+      <div class="rodape-conteudo">
+        <div class="rodape-apresentacao">
+          <div class="marca-devclub"><img src="./img/logo-devclub.png" alt="logo devclub" class="simbolo-marca"> DEV
+            <em>CLUB</em></div>
+          <p>Transformando carreiras através da educação em tecnologia.</p>
+        </div>
+
+        <div><strong>EXPLORE</strong><a href="#sobre">Sobre nós</a><a href="#formacoes">Formações</a><a
+            href="#matricula">Matrícula</a></div>
+        <div><strong>SUPORTE</strong><a href="#matricula">Quero ser aluno</a><a href="#faq">Perguntas frequentes</a><a
+            href="mailto:contato@devclub.com.br">Contato</a></div>
+        <div><strong>SOCIAL</strong><a href="https://www.instagram.com/devclubescola/followers/mutualOnly"
+            target="_blank">Instagram ↗</a><a href="https://www.youtube.com/@canaldevclub" target="_blank">YouTube
+            ↗</a><a href="https://www.linkedin.com/school/dev-club-devs/posts/?feedView=all" target="_blank">LinkedIn
+            ↗</a></div>
+      </div>
+
+      <div class="rodape-final"><span>© 2026 DevClub.</span><span>Feito com código, propósito e evolução.</span></div>
+    </footer>
+  </main>
+  <!-- CHAT DE IA: futuro ponto de integração com n8n -->
+  <div class="assistente-flutuante">
+  <div class="balao-assistente oculto">
+    <div class="cabecalho-assistente">
+      <img
+        class="avatar-assistente"
+        src="https://st4.depositphotos.com/7662228/26265/v/450/depositphotos_262655382-stock-illustration-chat-bot-icon-background-virtual.jpg"
+        alt="Avatar do assistente Clubinho"
+      >
+
+      <div>
+        <strong>Clubinho</strong>
+        <span>Assistente virtual</span>
+      </div>
+
+      <button
+        class="fechar-assistente"
+        type="button"
+        aria-label="Fechar assistente"
+      >
+        ×
+      </button>
+    </div>
+
+    <div
+      class="mensagens-assistente"
+      aria-live="polite"
+    >
+      <div class="mensagem-assistente mensagem-bot">
+        Olá! Eu sou o Clubinho 👋 Como posso ajudar?
+      </div>
+    </div>
+
+    <form class="formulario-assistente">
+      <input
+        class="campo-assistente"
+        type="text"
+        placeholder="Digite sua dúvida..."
+        autocomplete="off"
+        maxlength="500"
+        required
+      >
+
+      <button
+        class="enviar-assistente"
+        type="submit"
+        aria-label="Enviar mensagem"
+      >
+        ➜
+      </button>
+    </form>
+  </div>
+
+  <button
+    class="botao-assistente"
+    type="button"
+    aria-label="Abrir assistente de IA"
+  >
+    <img
+      src="https://st4.depositphotos.com/7662228/26265/v/450/depositphotos_262655382-stock-illustration-chat-bot-icon-background-virtual.jpg"
+      alt=""
+    >
+  </button>
+</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
